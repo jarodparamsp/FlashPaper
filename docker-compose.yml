@@ -14,7 +14,7 @@ services:
       BASE_URL: "" # https://mydomain.com/flashpaper
       MAX_SECRET_LENGTH: "3000"
       ANNOUNCEMENT: ""
-      MESSAGES_ERROR_SECRET_TOO_LONG: "Input length too Encrypted Message"
+      MESSAGES_ERROR_SECRET_TOO_LONG: "Input length too long"
       MESSAGES_SUBMIT_SECRET_SUBHEADER: ""
       MESSAGES_SUBMIT_SECRET_BUTTON: "Encrypt Message"
       MESSAGES_VIEW_CODE_HEADER: "One-Time Encrypted URL"
