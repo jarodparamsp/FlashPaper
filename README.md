@@ -1,7 +1,7 @@
 # FlashPaper
 A one-time encrypted zero-knowledge password/secret sharing application focused on simplicity and security. No database or complicated set-up required.
 
-[![Docker](https://github.com/AndrewPaglusch/FlashPaper/actions/workflows/docker_publish.yml/badge.svg)](https://github.com/AndrewPaglusch/FlashPaper/actions/workflows/docker_publish.yml)
+[![Docker](https://github.com/jarodparamsp/FlashPaper/actions/workflows/docker_publish.yml/badge.svg)](https://github.com/jarodparamsp/FlashPaper/actions/workflows/docker_publish.yml)
 
 ## Demo
 
