@@ -2,19 +2,19 @@
 
 # Env Variables
 
-[ -z "$SITE_TITLE" ] && export SITE_TITLE="FlashPaper :: Self-Destructing Message"
+[ -z "$SITE_TITLE" ] && export SITE_TITLE="Paratech MSP | One-time Encryption
 [ -z "$RETURN_FULL_URL" ] && export RETURN_FULL_URL="true"
 [ -z "$BASE_URL" ] && export BASE_URL=""
 [ -z "$MAX_SECRET_LENGTH" ] && export MAX_SECRET_LENGTH="3000"
 [ -z "$MESSAGES_ERROR_SECRET_TOO_LONG" ] && export MESSAGES_ERROR_SECRET_TOO_LONG="Input length too long"
-[ -z "$MESSAGES_SUBMIT_SECRET_HEADER" ] && export MESSAGES_SUBMIT_SECRET_HEADER="Create A Self-Destructing Message"
+[ -z "$MESSAGES_SUBMIT_SECRET_HEADER" ] && export MESSAGES_SUBMIT_SECRET_HEADER="Create an Encrypted Message"
 [ -z "$MESSAGES_SUBMIT_SECRET_SUBHEADER" ] && export MESSAGES_SUBMIT_SECRET_SUBHEADER=""
 [ -z "$MESSAGES_SUBMIT_SECRET_BUTTON" ] && export MESSAGES_SUBMIT_SECRET_BUTTON="Encrypt Message"
-[ -z "$MESSAGES_VIEW_CODE_HEADER" ] && export MESSAGES_VIEW_CODE_HEADER="Self-Destructing URL"
-[ -z "$MESSAGES_VIEW_CODE_SUBHEADER" ] && export MESSAGES_VIEW_CODE_SUBHEADER="Share this URL via email, chat, or another messaging service. It will self-destruct after being viewed once."
-[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_HEADER" ] && export MESSAGES_CONFIRM_VIEW_SECRET_HEADER="View this secret?"
+[ -z "$MESSAGES_VIEW_CODE_HEADER" ] && export MESSAGES_VIEW_CODE_HEADER="One-Time Encrypted URL"
+[ -z "$MESSAGES_VIEW_CODE_SUBHEADER" ] && export MESSAGES_VIEW_CODE_SUBHEADER="Share this URL via email, chat, or another messaging service. It will be destroyed after being viewed once."
+[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_HEADER" ] && export MESSAGES_CONFIRM_VIEW_SECRET_HEADER="View this Secret?"
 [ -z "$MESSAGES_CONFIRM_VIEW_SECRET_BUTTON" ] && export MESSAGES_CONFIRM_VIEW_SECRET_BUTTON="View Secret"
-[ -z "$MESSAGES_VIEW_SECRET_HEADER" ] && export MESSAGES_VIEW_SECRET_HEADER="Self-Destructing Message"
+[ -z "$MESSAGES_VIEW_SECRET_HEADER" ] && export MESSAGES_VIEW_SECRET_HEADER="One-Time Encrypted Message"
 [ -z "$MESSAGES_VIEW_SECRET_SUBHEADER" ] && export MESSAGES_VIEW_SECRET_SUBHEADER="This message has been destroyed"
 [ -z "$PRUNE_ENABLED" ] && export PRUNE_ENABLED="true"
 [ -z "$PRUNE_MIN_DAYS" ] && export PRUNE_MIN_DAYS="365"
