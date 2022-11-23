@@ -2,7 +2,7 @@
 	defined('_DIRECT_ACCESS_CHECK') or exit();
 
 	$settings = [
-		'site_title' => 'FlashPaper :: Self-Destructing Message',
+		'site_title' => 'Paratech MSP | One-time Encryption',
 		'return_full_url' => true,
 		'base_url' => '', # https://mydomain.com/flashpaper
 		'max_secret_length' => 3000,
@@ -19,13 +19,13 @@
 			'submit_secret_subheader' => '',
 			'submit_secret_button' => 'Encrypt Message',
 
-			'view_code_header' => 'Self-Destructing URL',
+			'view_code_header' => 'One-Time Encrypted URL',
 			'view_code_subheader' => 'Share this URL via email, chat, or another messaging service. It will self-destruct after being viewed once.',
 
 			'confirm_view_secret_header' => 'View this secret?',
 			'confirm_view_secret_button' => 'View Secret',
 
-			'view_secret_header' => 'Self-Destructing Message',
+			'view_secret_header' => 'One-Time Encrypted Message',
 			'view_secret_subheader' => 'This message has been destroyed',
 		]
 	];
