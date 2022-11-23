@@ -4,8 +4,8 @@
 	<head>
 		<!--
 		######################################################################################
-		# Copyright (c) 2017-<?php echo date("Y"); ?> Andrew Paglusch                                            #
-		# https://raw.githubusercontent.com/AndrewPaglusch/FlashPaper/master/LICENSE         #
+		# Copyright (c) 2017-<?php echo date("Y"); ?> Paratech MSP                                           #
+		# https://raw.githubusercontent.com/jarodparamsp/FlashPaper/master/LICENSE         #
 		######################################################################################
 		-->
 		<title><?php echo $settings['site_title'] ?></title>
