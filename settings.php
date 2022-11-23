@@ -20,10 +20,10 @@
 			'submit_secret_button' => 'Encrypt Message',
 
 			'view_code_header' => 'One-Time Encrypted URL',
-			'view_code_subheader' => 'Share this URL via email, chat, or another messaging service. It will self-destruct after being viewed once.',
+			'view_code_subheader' => 'Share this URL via email, chat, or another messaging service. It will be destroyed once it has been viewed.',
 
-			'confirm_view_secret_header' => 'View this secret?',
-			'confirm_view_secret_button' => 'View Secret',
+			'confirm_view_secret_header' => 'View this Message?',
+			'confirm_view_secret_button' => 'View Message',
 
 			'view_secret_header' => 'One-Time Encrypted Message',
 			'view_secret_subheader' => 'This message has been destroyed',
