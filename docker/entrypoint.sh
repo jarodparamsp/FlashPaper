@@ -11,9 +11,9 @@
 [ -z "$MESSAGES_SUBMIT_SECRET_SUBHEADER" ] && export MESSAGES_SUBMIT_SECRET_SUBHEADER=""
 [ -z "$MESSAGES_SUBMIT_SECRET_BUTTON" ] && export MESSAGES_SUBMIT_SECRET_BUTTON="Encrypt Message"
 [ -z "$MESSAGES_VIEW_CODE_HEADER" ] && export MESSAGES_VIEW_CODE_HEADER="One-Time Encrypted URL"
-[ -z "$MESSAGES_VIEW_CODE_SUBHEADER" ] && export MESSAGES_VIEW_CODE_SUBHEADER="Share this URL via email, chat, or another messaging service. It will be destroyed after being viewed once."
-[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_HEADER" ] && export MESSAGES_CONFIRM_VIEW_SECRET_HEADER="View this Secret?"
-[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_BUTTON" ] && export MESSAGES_CONFIRM_VIEW_SECRET_BUTTON="View Secret"
+[ -z "$MESSAGES_VIEW_CODE_SUBHEADER" ] && export MESSAGES_VIEW_CODE_SUBHEADER="Share this URL via email, chat, or another messaging service. It will be destroyed once it has been viewed."
+[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_HEADER" ] && export MESSAGES_CONFIRM_VIEW_SECRET_HEADER="View this Message?"
+[ -z "$MESSAGES_CONFIRM_VIEW_SECRET_BUTTON" ] && export MESSAGES_CONFIRM_VIEW_SECRET_BUTTON="View Message"
 [ -z "$MESSAGES_VIEW_SECRET_HEADER" ] && export MESSAGES_VIEW_SECRET_HEADER="One-Time Encrypted Message"
 [ -z "$MESSAGES_VIEW_SECRET_SUBHEADER" ] && export MESSAGES_VIEW_SECRET_SUBHEADER="This message has been destroyed"
 [ -z "$PRUNE_ENABLED" ] && export PRUNE_ENABLED="true"
@@ -34,7 +34,7 @@ nginx -c /etc/nginx/nginx.conf
 # Ready to serve?
 for i in 1 2 3; do
   echo "Checking to see if FlashPaper is ready. ($i of 3)"
-  curl -sm3 localhost | grep -q "AndrewPaglusch/FlashPaper"
+  curl -sm3 localhost | grep -q "jarodparamsp/FlashPaper"
   if [[ $? -eq 0 ]]; then
     echo "FlashPaper is ready."
     break
