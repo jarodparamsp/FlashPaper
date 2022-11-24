@@ -1,26 +1,26 @@
-# FlashPaper
+# One-time Encryption
 A one-time encrypted zero-knowledge password/secret sharing application focused on simplicity and security. No database or complicated set-up required.
 
 [![Docker](https://github.com/jarodparamsp/FlashPaper/actions/workflows/docker_publish.yml/badge.svg)](https://github.com/jarodparamsp/FlashPaper/actions/workflows/docker_publish.yml)
 
 ## Demo
 
-https://flashpaper.io
+https://secret.paramsp.com
 
 ![Picture of Main Page](https://i.imgur.com/KIs9fjE.png)
 
 ## Installation
 
 ### Docker *(Recommended)*
-  The latest release of FlashPaper is available at [`ghcr.io/andrewpaglusch/flashpaper`](https://ghcr.io/andrewpaglusch/flashpaper).
-  1. Download [docker-compose.yml](https://raw.githubusercontent.com/AndrewPaglusch/FlashPaper/master/docker-compose.yml) from this repo
+  The latest release of FlashPaper is available at [`ghcr.io/jarodparamsp/flashpaper`](https://ghcr.io/jarodparamsp/flashpaper).
+  1. Download [docker-compose.yml](https://raw.githubusercontent.com/jarodparamsp/FlashPaper/master/docker-compose.yml) from this repo
   2. Edit `docker-compose.yml` with your customizations
   3. Run `docker-compose up -d` to start FlashPaper
   4. Set up a reverse-proxy in front of FlashPaper that terminates SSL/TLS
 
 ### Traditional
   **Requirements:** PHP 7.0+ and a web server
-  1. Download and extract the [latest release](https://github.com/AndrewPaglusch/FlashPaper/releases/latest) of FlashPaper to the document root of your web server
+  1. Download and extract the [latest release](https://github.com/jarodparamsp/FlashPaper/releases/latest) of FlashPaper to the document root of your web server
   2. Copy `settings.example.php` to `settings.php` and make customizations to that file
   3. Disable access logging in your web server's configuration so nothing sensitive (IP addresses, user agent strings, timestamps, etc) are logged to disk
 
@@ -55,8 +55,8 @@ FlashPaper can accept secret submissions through a simple API. The retrieval URL
 
 Here's what it looks like to submit a secret with `curl`:
 ```
-$ curl -s -X POST -d "secret=my secret&json=true" https://flashpaper.io
-{"url":"https://flashpaper.io/?k=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+$ curl -s -X POST -d "secret=my secret&json=true" https://secret.paramsp.com
+{"url":"https://secret.paramsp.com/?k=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 ```
 
 ## Settings
@@ -66,12 +66,5 @@ $ curl -s -X POST -d "secret=my secret&json=true" https://flashpaper.io
  - `min_days`/`max_days`: When a secret is submitted, a random date/time is generated between `min_days` and `max_days` in the future. After that date/time has elapsed, the secret will be pruned from the database if `enabled` is set to `true`. This is to prevent your database from being filled with secrets that are never retrieved. NOTE: Even if `enabled` is set to `false`, the prune value will still be generated and stored in the database, but secrets will not be pruned unless `enabled` is switched to `true`.
 
 ### `base_url`:
-FlashPaper will try to generate the secret retrieval URL based on information provided by the upstream webserver. This process isn't always 100% accurate. If the secret retrieval URL that FlashPaper creates isn't correct for your setup (this usually happens when you're using a reverse proxy upstream), you can manually specify the URL that FlashPaper will use. For example: A `base_url` of "https://foo.com/flashpaper" will result in retrieval URLs like "https://foo.com/flashpaper/?k=xxxxxxxxxxxxx".
+Encrypt MSG will try to generate the secret retrieval URL based on information provided by the upstream webserver. This process isn't always 100% accurate. If the secret retrieval URL that Encrypt Msg creates isn't correct for your setup (this usually happens when you're using a reverse proxy upstream), you can manually specify the URL that Encrypt Msg will use. For example: A `base_url` of "https://paramsp.com/encryptmsg" will result in retrieval URLs like "https://paramsp.com/encryptmsg/?k=xxxxxxxxxxxxx".
 
-## Donations
-
-PayPal: https://paypal.me/AndrewPaglusch
-
-BitCoin: 1EYDa33S14ejuQGMhSjtBUmBHTBB8mbTRs
-
-Donations are not expected, but they are very appreciated!
