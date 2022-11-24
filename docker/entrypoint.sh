@@ -2,7 +2,7 @@
 
 # Env Variables
 
-[ -z "$SITE_TITLE" ] && export SITE_TITLE="Paratech MSP | One-time Encryption
+[ -z "$SITE_TITLE" ] && export SITE_TITLE="Paratech MSP | One-time Encryption"
 [ -z "$RETURN_FULL_URL" ] && export RETURN_FULL_URL="true"
 [ -z "$BASE_URL" ] && export BASE_URL=""
 [ -z "$MAX_SECRET_LENGTH" ] && export MAX_SECRET_LENGTH="3000"
