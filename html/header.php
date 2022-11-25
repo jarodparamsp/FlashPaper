@@ -9,6 +9,7 @@
 		######################################################################################
 		-->
 		<title><?php echo $settings['site_title'] ?></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<!-- Meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
